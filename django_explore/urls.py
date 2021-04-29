@@ -22,13 +22,13 @@ from django.conf.urls import  include, url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'sayhello/', sayHello),
-    path(r'login/', regist),
+    url(r'sayhello/', sayHello),
+    url(r'^login/$', login, name="login"),
     # path(r'regist/', UserForm),
-    path(r'index/', index),
-    path(r'logout/', logout),
-    path(r'share/', share),
-    url(r'^regist/$', regist, name="regist")
+    url(r'^index/$', index, name="index"),
+    url(r'^logout/$', logout, name="logout"),
+    url(r'^share/$', share, name="share"),
+    url(r'^regist/$', regist, name="regist"),
 
 ]
 

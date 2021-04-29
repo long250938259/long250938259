@@ -61,11 +61,11 @@ def login(req):
                 return HttpResponseRedirect('/login/')
     else:
         uf = UserForm()
-    return render('login.html',{'uf':uf},context_instance=RequestContext(req))
+    return render(req ,'login.html', {'uf': uf})
 #登录成功
 def index(req):
     username = req.COOKIES.get('username','')
-    return render('index.html',{'username':username})
+    return render(req, 'index.html',{'username':username})
 #退出登录
 
 def logout(req):
@@ -81,10 +81,10 @@ def share(req):
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
 
-            return render('share.html',{'username':username})
+            return render(req ,'share.html',{'username':username})
     else:
         uf = UserForm()
-    return render('share.html',{'uf':uf})
+    return render(req , 'share.html',{'uf':uf})
 
 
 def sayHello(request):
