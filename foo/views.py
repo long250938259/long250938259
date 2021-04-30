@@ -28,7 +28,7 @@ def regist(req):
             password = uf.cleaned_data['password']
             #添加到数据库
             #User.objects.get_or_create(username = username,password = password)
-            registAdd = User.objects.get_or_create(username = username,password = password)[1]
+            registAdd = User.objects.get_or_create(username = username, password = password)[1]
             print(registAdd)
             if registAdd == False:
                 #return HttpResponseRedirect('/share/')
