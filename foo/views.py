@@ -31,9 +31,11 @@ def regist(req):
             registAdd = User.objects.get_or_create(username = username,password = password)[1]
             if registAdd == False:
                 #return HttpResponseRedirect('/share/')
-                return render('share.html',{'registAdd':registAdd,'username':username})
+                req1 = {}
+                req1["username"] = username
+                return render(req,'share.html',context=req1)
             else:
-                return render('share.html',{'registAdd':registAdd})
+                return render(req ,'share.html')
 
     else:
         uf = UserForm()
