@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('hname', models.CharField(max_length=20)),
                 ('hgender', models.BooleanField()),
                 ('hcontent', models.CharField(max_length=100)),
-                ('hBook', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='foo.bookinfo')),
+                ('hBook', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='blog.bookinfo')),
             ],
         ),
     ]

@@ -4,7 +4,7 @@ from django.shortcuts import render, render
 from django import forms
 from django.http import HttpResponse,HttpResponseRedirect
 from django.template import RequestContext
-from foo.models import User
+from blog.models import People
 import datetime
 from django.http import HttpResponse
 
@@ -28,7 +28,7 @@ def regist(req):
             password = uf.cleaned_data['password']
             #添加到数据库
             #User.objects.get_or_create(username = username,password = password)
-            registAdd = User.objects.get_or_create(username = username, password = password)[1]
+            registAdd = People.objects.get_or_create(username = username, password = password)[1]
             print(registAdd)
             if registAdd == False:
                 #return HttpResponseRedirect('/share/')
@@ -53,7 +53,7 @@ def login(req):
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
             #对比提交的数据与数据库中的数据
-            user = User.objects.filter(username__exact = username,password__exact = password)
+            user = People.objects.filter(username__exact = username,password__exact = password)
             if user:
                 #比较成功，跳转index
                 response = HttpResponseRedirect('/index/')
