@@ -1,12 +1,13 @@
 from django.shortcuts import render
 #coding:utf-8
-from django.shortcuts import render, render
+from django.shortcuts import render, render, get_object_or_404
 from django import forms
 from django.http import HttpResponse,HttpResponseRedirect
 from django.template import RequestContext
 from blog.models import People
 import datetime
 from django.http import HttpResponse
+from .models import Post
 
 from django.views.decorators.csrf import csrf_exempt
 
@@ -100,5 +101,21 @@ def sayHello(request):
 # def regist(request):
 #     return render(request, "regist.html")
 
+def post_list(request):
+    posts = Post.published.all()
+    return render(request,
+                  'blog/post/list.html',
+                  {'posts': posts})
+
+
+def post_detail(request, year, month, day, post):
+    post = get_object_or_404(Post, slug=post,
+                                   status='published',
+                                   publish__year=year,
+                                   publish__month=month,
+                                   publish__day=day)
+    return render(request,
+                  'blog/post/detail.html',
+                  {'post': post})
 
 

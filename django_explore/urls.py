@@ -20,6 +20,8 @@ from blog.views import regist, login, logout, index, share
 from django.conf.urls import  include, url
 # from blog.views import regist
 
+app_name = '[blog]'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'sayhello/', sayHello),
@@ -29,6 +31,7 @@ urlpatterns = [
     url(r'^logout/$', logout, name="logout"),
     url(r'^share/$', share, name="share"),
     url(r'^regist/$', regist, name="regist"),
+    url(r'^blog/', include('blog.urls', namespace='blog')),
 
 ]
 
