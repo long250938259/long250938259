@@ -1,12 +1,15 @@
 from django.shortcuts import render
 #coding:utf-8
-from django.shortcuts import render, render
+from django.shortcuts import render, render, get_object_or_404
 from django import forms
 from django.http import HttpResponse,HttpResponseRedirect
 from django.template import RequestContext
-from foo.models import User
+from blog.models import People
 import datetime
 from django.http import HttpResponse
+from .models import Post
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.views.generic import ListView
 
 from django.views.decorators.csrf import csrf_exempt
 
@@ -28,7 +31,7 @@ def regist(req):
             password = uf.cleaned_data['password']
             #添加到数据库
             #User.objects.get_or_create(username = username,password = password)
-            registAdd = User.objects.get_or_create(username = username, password = password)[1]
+            registAdd = People.objects.get_or_create(username = username, password = password)[1]
             print(registAdd)
             if registAdd == False:
                 #return HttpResponseRedirect('/share/')
@@ -53,7 +56,7 @@ def login(req):
             username = uf.cleaned_data['username']
             password = uf.cleaned_data['password']
             #对比提交的数据与数据库中的数据
-            user = User.objects.filter(username__exact = username,password__exact = password)
+            user = People.objects.filter(username__exact = username,password__exact = password)
             if user:
                 #比较成功，跳转index
                 response = HttpResponseRedirect('/index/')
@@ -100,5 +103,38 @@ def sayHello(request):
 # def regist(request):
 #     return render(request, "regist.html")
 
+def post_list(request):
+    object_list = Post.published.all()
+    paginator = Paginator(object_list, 3)  # 3 posts in each page
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer deliver the first page
+        posts = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range deliver last page of results
+        posts = paginator.page(paginator.num_pages)
+    return render(request,
+                  'blog/post/list.html',
+                  {'page': page,
+                   'posts': posts})
 
+
+def post_detail(request, year, month, day, post):
+    post = get_object_or_404(Post, slug=post,
+                                   status='published',
+                                   publish__year=year,
+                                   publish__month=month,
+                                   publish__day=day)
+    return render(request,
+                  'blog/post/detail.html',
+                  {'post': post})
+
+
+class PostListView(ListView):
+    queryset = Post.published.all()
+    context_object_name = 'posts'
+    paginate_by = 3
+    template_name = 'blog/post/list.html'
 

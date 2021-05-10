@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from foo.views import sayHello
-from foo.views import regist, login, logout, index, share
+from blog.views import sayHello
+from blog.views import regist, login, logout, index, share
 from django.conf.urls import  include, url
-# from foo.views import regist
+# from blog.views import regist
+
+app_name = '[blog]'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,6 +31,7 @@ urlpatterns = [
     url(r'^logout/$', logout, name="logout"),
     url(r'^share/$', share, name="share"),
     url(r'^regist/$', regist, name="regist"),
+    url(r'^blog/', include('blog.urls', namespace='blog')),
 
 ]
 
@@ -38,10 +41,10 @@ urlpatterns = [
 #     # url(r'^$', 'form_test.views.home', name='home'),
 #     # url(r'^blog/', include('blog.urls')),
 #     path(r'^admin/', include(admin.site.paths)),
-#     path(r'^$', 'foo.views.login',name='login'),
-#     path(r'^login/$', 'foo.views.login',name='login'),
-#     path(r'^regist/$', 'foo.views.regist',name='regist'),
-#     path(r'^index/$', 'foo.views.index',name='index'),
-#     path(r'^logout/$', 'foo.views.logout',name='logout'),
-#     path(r'^share/$', 'foo.views.share',name='share'),
+#     path(r'^$', 'blog.views.login',name='login'),
+#     path(r'^login/$', 'blog.views.login',name='login'),
+#     path(r'^regist/$', 'blog.views.regist',name='regist'),
+#     path(r'^index/$', 'blog.views.index',name='index'),
+#     path(r'^logout/$', 'blog.views.logout',name='logout'),
+#     path(r'^share/$', 'blog.views.share',name='share'),
 # )
