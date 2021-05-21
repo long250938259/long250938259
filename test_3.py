@@ -1,33 +1,59 @@
-import time
-import tkinter
-import tkinter.messagebox
+import requests
+import pprint
+import json
+
+data = {
+    "requestId": "303fe1ca-9d76-45e3-ac3e-41f6aa35a994",
+    "createTime": 0,
+    "generator": 1,
+    "type": 1,
+    "fromUser": {
+        "nickName": "我是买家啊啊啊1122244211",
+        "role": 1,
+        "openId": "2m4JPAGoC0cV0xYkWSiGZv1jQkdZkAnRjRSU0qH9L1t"
+    },
+    "toUser": {
+        "nickName": "我是卖家呀呀呀",
+        "role": 3
+    },
+    # "transferList": None,
+    "context": {
+        "sellerId": 1896157411,
+        "itemId": 0,
+        "orderId": 0,
+        "orderStatus": 0,
+        "assistantOnlineStatus": 0
+    },
+    "message": {
+        "contentType": 1011,
+        "content": "{\"text\":\"https://www.kwaishop.com/merchant/shop/detail?id=193146816411\"}"
+    }
+}
+
+url = "https://wangcai-test-ks.xiaoduoai.com/spi/chatbotevent"
+
+res = requests
+res1 = res.post(url=url, json=data )
+print(res1.json())
 
 
-def download():
-    # 模拟下载任务需要花费10秒钟时间
-    time.sleep(10)
-    tkinter.messagebox.showinfo('提示', '下载完成!')
 
 
-def show_about():
-    tkinter.messagebox.showinfo('关于', '作者: 骆昊(v1.0)')
 
 
-def main():
-    top = tkinter.Tk()
-    top.title('单线程')
-    top.geometry('200x150')
-    top.wm_attributes('-topmost', True)
-
-    panel = tkinter.Frame(top)
-    button1 = tkinter.Button(panel, text='下载', command=download)
-    button1.pack(side='left')
-    button2 = tkinter.Button(panel, text='关于', command=show_about)
-    button2.pack(side='right')
-    panel.pack(side='bottom')
-
-    tkinter.mainloop()
 
 
-if __name__ == '__main__':
-    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
