@@ -18,7 +18,7 @@ data = {
     },
     # "transferList": None,
     "context": {
-        "sellerId": 1896157411,
+        "sellerId": 1901625824,
         "itemId": 0,
         "orderId": 0,
         "orderStatus": 0,
@@ -26,7 +26,7 @@ data = {
     },
     "message": {
         "contentType": 1011,
-        "content": "{\"text\":\"https://www.kwaishop.com/merchant/shop/detail?id=193146816411\"}"
+        "content": "{\"text\":\"https://www.kwaishop.com/merchant/shop/detail?id=467261559824\"}"
     }
 }
 

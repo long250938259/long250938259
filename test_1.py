@@ -10,15 +10,15 @@ data = {
     "fromUser": {
         "nickName": "我是买家啊啊啊1122244211",
         "role": 1,
-        "openId": "2m4JPAGoC0cV0xYkWSiGZv1jQkdZkAnRjRSU0qH9L1t"
+        "openId": "2m4JPAGoC0cV0xYkWSiGZv1jQkdZkAnRjRSU0qH9L1t001"
     },
     "toUser": {
         "nickName": "我是卖家呀呀呀",
-        "role": 3
+        "role": 2
     },
     # "transferList": None,
     "context": {
-        "sellerId": 1896157411,
+        "sellerId": 1901625824,
         "itemId": 0,
         "orderId": 0,
         "orderStatus": 0,
@@ -26,7 +26,7 @@ data = {
     },
     "message": {
         "contentType": 1,
-        "content": "{\"text\":\"深刻的火关\"}"
+        "content": "{\"text\":\"473598402sddsf\"}"
     }
 }
 
