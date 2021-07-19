@@ -8,7 +8,7 @@ data = {
     "fromUser": {
         "nickName": "shilidian1",
         "role": 1,
-        "openId": "nntOEKMDKwm1Qk6Tevy8GHgGa2ZtWg5t12f0irch1121"
+        "openId": "nntOEKMDKwm1Qk6Tevy8GHgGa2ZtWg5t12f0irch11221"
     },
     "toUser": {
         "nickName": "wufei",
@@ -24,7 +24,7 @@ data = {
     },
     "message": {
         "contentType": 1,
-        "content": "{\"text\":\"寄回的商品显示已签收\"}"
+        "content": "{\"text\":\"你好\"}"
     }
 }
 

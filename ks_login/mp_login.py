@@ -14,7 +14,11 @@ class ApiLogin(object):
         url_res = json_res['v4_url']
         res_login = requests.get(url_res)
         cookie_data = res_login.request.headers._store['cookie']
-        return res_login, cookie_data[1]
+        headers = {
+            "Xiaoduo-Platform": "ks",
+            "Cookie": cookie_data[1]
+        }
+        return headers
 
 if __name__ == "__main__":
     login = ApiLogin()
