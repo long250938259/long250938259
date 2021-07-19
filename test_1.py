@@ -1,6 +1,4 @@
 import requests
-import pprint
-import json
 
 data = {
     "requestId": "303fe1ca-9d76-45e3-ac3e-41f6aa35a994",
@@ -8,12 +6,12 @@ data = {
     "generator": 1,
     "type": 1,
     "fromUser": {
-        "nickName": "我是买家啊啊啊1122244211",
+        "nickName": "shilidian1",
         "role": 1,
-        "openId": "2m4JPAGoC0cV0xYkWSiGZv1jQkdZkAnRjRSU0qH9L1t001"
+        "openId": "nntOEKMDKwm1Qk6Tevy8GHgGa2ZtWg5t12f0irch1121"
     },
     "toUser": {
-        "nickName": "我是卖家呀呀呀",
+        "nickName": "wufei",
         "role": 2
     },
     # "transferList": None,
@@ -26,7 +24,7 @@ data = {
     },
     "message": {
         "contentType": 1,
-        "content": "{\"text\":\"473598402sddsf\"}"
+        "content": "{\"text\":\"寄回的商品显示已签收\"}"
     }
 }
 

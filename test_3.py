@@ -8,12 +8,12 @@ data = {
     "generator": 1,
     "type": 1,
     "fromUser": {
-        "nickName": "我是买家啊啊啊1122244211",
+        "nickName": "我是买家啊啊啊啊啊~~~~",
         "role": 1,
-        "openId": "2m4JPAGoC0cV0xYkWSiGZv1jQkdZkAnRjRSU0qH9L1t"
+        "openId": "2m4JPAGoC0cV0xYkWSiGZv1jQkdZkAnRjRSU0qH9L1ta011"
     },
     "toUser": {
-        "nickName": "我是卖家呀呀呀",
+        "nickName": "我是卖家呀呀呀呀呀！！！！！",
         "role": 3
     },
     # "transferList": None,
@@ -26,7 +26,7 @@ data = {
     },
     "message": {
         "contentType": 1011,
-        "content": "{\"text\":\"https://www.kwaishop.com/merchant/shop/detail?id=467261559824\"}"
+        "content": "{\"text\":\"https://www.kwaishop.com/merchant/shop/detail?id=1573474220824\"}"
     }
 }
 
