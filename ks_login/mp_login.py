@@ -28,10 +28,10 @@ class ApiLogin(object):
         }
         return headers
 
-if __name__ == "__main__":
-    login = ApiLogin()
-    headers = login.login(company_name="1901625824")
-    print(headers)
+# if __name__ == "__main__":
+#     login = ApiLogin()
+#     headers = login.login(company_name="1901625824")
+#     print(headers)
 
 
 

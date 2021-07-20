@@ -1,20 +1,15 @@
 import requests
 import json
 import pytest
-from ks_login.ksp_api import TransferApi
+from pytest_test.options.options_common import tranfer_common
 
 
 @pytest.mark.transfer
-class TestTranfer(TransferApi):
+class TestTranfer(tranfer_common):
 
     @pytest.mark.critical
     def test_001(self):
         settings_msg_before_transfer = "fdsfdsfds1232454~~~~~~~~~~~~~但是分的高分1111233311"
-        self.edit_my_tranfer(settings_msg_before_transfer=settings_msg_before_transfer)
-
-#
-# if __name__ == "__main__":
-#     a = TestTranfer()
-#     a.test001()
+        self.ome(settings=settings_msg_before_transfer)
 
 

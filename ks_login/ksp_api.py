@@ -22,11 +22,11 @@ class TransferApi(object):
         print(json_res)
 
 
-if __name__ == "__main__":
-    login = mp_login.ApiLogin()
-    headers = login.login(company_name="1901625824")
-    a = TransferApi()
-
-    a.edit_my_tranfer(settings_msg_before_transfer="fdsfdsfds1232454~~~~~~~~~~~1~~但是分的高分")
+# if __name__ == "__main__":
+#     login = mp_login.ApiLogin()
+#     headers = login.login(company_name="1901625824")
+#     a = TransferApi()
+#
+#     a.edit_my_tranfer(settings_msg_before_transfer="fdsfdsfds1232454~~~~~~~~~~~1~~但是分的高分")
 
 
