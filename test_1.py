@@ -6,9 +6,9 @@ data = {
     "generator": 1,
     "type": 1,
     "fromUser": {
-        "nickName": "shilidian1",
+        "nickName": "在于自己",
         "role": 1,
-        "openId": "nntOEKMDKwm1Qk6Tevy8GHgGa2ZtWg5t12f0irch11221"
+        "openId": "nntOEKMDKwm1Qk6Tevy8GHgGa2ZtW2g5t12f0irch11221"
     },
     "toUser": {
         "nickName": "wufei",
