@@ -8,11 +8,13 @@ from ks_login.ksp_api import TransferApi
 class TestTranfer(TransferApi):
 
     @pytest.mark.critical
-    def test001(self):
-        settings_msg_before_transfer = "fdsfdsfds1232454~~~~~~~~~~~~~但是分的高分111111"
+    def test_001(self):
+        settings_msg_before_transfer = "fdsfdsfds1232454~~~~~~~~~~~~~但是分的高分1111233311"
         self.edit_my_tranfer(settings_msg_before_transfer=settings_msg_before_transfer)
 
-
-
+#
+# if __name__ == "__main__":
+#     a = TestTranfer()
+#     a.test001()
 
 
