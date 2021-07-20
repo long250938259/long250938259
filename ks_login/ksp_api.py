@@ -9,13 +9,22 @@ headers = log.login(company_name="1901625824")
 class TransferApi(object):
 
     def __init__(self):
-        self.target_url = "https://wangcai-test-ks.xiaoduoai.com"
+        self.target_url = "https://ks4.xiaoduoai.com"
         self.admin_xdservice_edit_my = "/api/admin/xdservice/edit_my"
 
     def edit_my_tranfer(self, settings_msg_before_transfer):
         url = self.target_url + self.admin_xdservice_edit_my
         data = {
             "settings_msg_before_transfer": settings_msg_before_transfer
+        }
+        res = requests.post(url=url, data=data, headers=headers)
+        json_res = json.loads(res.text)
+        print(json_res)
+
+    def edit_my_front(self, settings_robot_prefix):
+        url = self.target_url + self.admin_xdservice_edit_my
+        data = {
+            "settings_robot_prefix": settings_robot_prefix
         }
         res = requests.post(url=url, data=data, headers=headers)
         json_res = json.loads(res.text)

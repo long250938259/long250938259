@@ -16,8 +16,8 @@ class ApiLogin(object):
         self.login_url = config.get("ProjectConfig", 'login_url')
 
     def login(self, company_name):
-        url = self.target_url + self.login_url + "?subnick=" + company_name
-        res = requests.get(url)
+        url = self.target_url + self.online_login_url + "?subnick=" + company_name
+        res = requests.post(url)
         json_res = json.loads(res.text)
         url_res = json_res['v4_url']
         res_login = requests.get(url_res)
@@ -28,11 +28,12 @@ class ApiLogin(object):
         }
         return headers
 
+
 # if __name__ == "__main__":
 #     login = ApiLogin()
 #     headers = login.login(company_name="1901625824")
 #     print(headers)
-
+#
 
 
 
