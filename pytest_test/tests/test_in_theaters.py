@@ -1,24 +1,18 @@
 import requests
 import json
+import pytest
+from ks_login.ksp_api import TransferApi
 
 
-class TestInTheaters(object):
-    def test_in_theater(self):
-        host = "https://movie.douban.com"
-        path = '/j/search_subjects'
-        params = {
-            "type": "movie",
-            "tag": "热门",
-            "page_limit": 50,
-            "page_start": 0
-        }
-        headers = {
-            "Cookie": "bid=ZJWqvp1f3CI"
-        }
-        r = requests.request("get", url=host+path, headers=headers, params=params)
-        response = r.json()
-        print(response)
-        assert response["title"] == "正在上映的电影-上海"
+@pytest.mark.transfer
+class TestTranfer(TransferApi):
+
+    @pytest.mark.critical
+    def test001(self):
+        settings_msg_before_transfer = "fdsfdsfds1232454~~~~~~~~~~~~~但是分的高分111111"
+        self.edit_my_tranfer(settings_msg_before_transfer=settings_msg_before_transfer)
+
+
 
 
 
