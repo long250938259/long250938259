@@ -18,7 +18,5 @@ class TestClass(tranfer_common):
         self.omea(settingsa=s)
 
 
-# if __name__ == '__main__':
-#     os.system("pytest -s ./test_in_theaters.py")
-# #     a = TestTranfer()
-# #     a.test_002()
+if __name__ == '__main__':
+    pytest.main("-r", "test_in_theaters")
