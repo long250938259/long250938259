@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "options",
+    "children" : [ {
+      "name" : "test_in_theaters",
+      "children" : [ {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "获取所有问题列表",
+          "uid" : "e91e5f89441feed6",
+          "parentUid" : "219c7d75cb72c90becc47e811dd016ac",
+          "status" : "passed",
+          "time" : {
+            "start" : 1626944013352,
+            "stop" : 1626944013605,
+            "duration" : 253
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "获取所有问题列表1",
+          "uid" : "b2fd3351cc1f08d1",
+          "parentUid" : "219c7d75cb72c90becc47e811dd016ac",
+          "status" : "passed",
+          "time" : {
+            "start" : 1626944013610,
+            "stop" : 1626944013856,
+            "duration" : 246
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "219c7d75cb72c90becc47e811dd016ac"
+      } ],
+      "uid" : "692fb0632f0bb9634e78ba59af07feab"
+    } ],
+    "uid" : "7b9ea93fe89ca75a81f5400fbb6fc570"
+  } ]
+}
