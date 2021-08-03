@@ -24,7 +24,7 @@ data = {
     },
     "message": {
         "contentType": 1,
-        "content": "{\"text\":\"你好\"}"
+        "content": "{\"text\":\"寄回的商品显示已签收\"}"
     }
 }
 
