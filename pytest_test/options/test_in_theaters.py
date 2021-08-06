@@ -25,6 +25,11 @@ class TestClass(tranfer_common):
         s = "~~1~~"
         self.omea(settingsa=s)
 
+    def test_003(self):
+        shop_id = "5ec76879edbe97000f8d850c"
+        question_id = "504820385"
+        self.add_shop_tranfer(shop_id=shop_id, questions_ids=question_id)
+
 
 if __name__ == '__main__':
     pytest.main(['--alluredir', 'D:/ll/dj/long250938259/pytest_test/report'])

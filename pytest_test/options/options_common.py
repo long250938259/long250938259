@@ -11,3 +11,7 @@ class tranfer_common(object):
 
     def omea(self, settingsa):
         self.tranfer.edit_my_front(settings_robot_prefix=settingsa)
+
+    def add_shop_tranfer(self, shop_id, questions_ids):
+        res = self.tranfer.add_shop_tranfer_v2(shop_id=shop_id, questions_ids=questions_ids)
+        assert res["code"] == 0
