@@ -15,7 +15,7 @@ class TestClass(tranfer_common):
     @pytest.mark.critical
     @allure.severity('critical')
     def test_001(self):
-        settings_msg_before_transfer = "fdsfdsfds1232454~~~22~~~~~~~~~~但是分的高分1111233311"
+        settings_msg_before_transfer = "我是转接的话术呀~~~"
         self.ome(settings=settings_msg_before_transfer)
 
     @allure.title('获取所有问题列表1')
