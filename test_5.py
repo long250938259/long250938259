@@ -32,3 +32,7 @@ def login():
 
 if __name__ == '__main__':
     server.run(debug=True, port=8888, host='0.0.0.0')  # 指定端口、host,0.0.0.0代表不管几个网卡，任何ip都可以访问
+   4354
+    55555555
+234324
+324324
