@@ -1,0 +1,90 @@
+{
+  "uid" : "52f6f58ca51d7259",
+  "name" : "获取所有问题列表",
+  "fullName" : "options.test_in_theaters.TestClass#test_001",
+  "historyId" : "332df1de79d354f13fa3490c19d7f573",
+  "time" : {
+    "start" : 1628767220955,
+    "stop" : 1628767221168,
+    "duration" : 213
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9de030174d85b276",
+      "name" : "stdout",
+      "source" : "9de030174d85b276.txt",
+      "type" : "text/plain",
+      "size" : 27
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "epic",
+    "value" : "epic_platform"
+  }, {
+    "name" : "feature",
+    "value" : "设置"
+  }, {
+    "name" : "story",
+    "value" : "辅助面板设置"
+  }, {
+    "name" : "tag",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "transfer"
+  }, {
+    "name" : "parentSuite",
+    "value" : "options"
+  }, {
+    "name" : "suite",
+    "value" : "test_in_theaters"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-62DMK9D"
+  }, {
+    "name" : "thread",
+    "value" : "12940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "options.test_in_theaters"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "transfer", "critical" ]
+  },
+  "source" : "52f6f58ca51d7259.json",
+  "parameterValues" : [ ]
+}

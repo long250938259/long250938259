@@ -1,0 +1,52 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-62DMK9D",
+    "children" : [ {
+      "name" : "12940-MainThread",
+      "children" : [ {
+        "name" : "获取所有问题列表",
+        "uid" : "52f6f58ca51d7259",
+        "parentUid" : "b4a92a17fdd0e4df4c3d521787b10205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628767220955,
+          "stop" : 1628767221168,
+          "duration" : 213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_003",
+        "uid" : "8a98a8762a6518df",
+        "parentUid" : "b4a92a17fdd0e4df4c3d521787b10205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628767221368,
+          "stop" : 1628767221617,
+          "duration" : 249
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "获取所有问题列表1",
+        "uid" : "2b1c30353cce651a",
+        "parentUid" : "b4a92a17fdd0e4df4c3d521787b10205",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628767221171,
+          "stop" : 1628767221362,
+          "duration" : 191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b4a92a17fdd0e4df4c3d521787b10205"
+    } ],
+    "uid" : "f0e47f0156a7d9513976b93552869c3f"
+  } ]
+}

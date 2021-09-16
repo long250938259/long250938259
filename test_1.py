@@ -8,10 +8,10 @@ data = {
     "fromUser": {
         "nickName": "在于自己",
         "role": 1,
-        "openId": "nntOEKMDKwm1Qk6Tevy8GHgGa2ZtW2g5t12f0irch11221"
+        "openId": "Vb2oGFTksn5jWZZQiM8zqEl7Ox3pValH3Jw878iDQab"
     },
     "toUser": {
-        "nickName": "wufei",
+        "nickName": "三里清风",
         "role": 2
     },
     # "transferList": None,
@@ -24,7 +24,7 @@ data = {
     },
     "message": {
         "contentType": 1,
-        "content": "{\"text\":\"寄回的商品显示已签收\"}"
+        "content": "{\"text\":\"32结婚2313xd\"}"
     }
 }
 

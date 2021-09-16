@@ -1,0 +1,31 @@
+[ {
+  "uid" : "52f6f58ca51d7259",
+  "name" : "获取所有问题列表",
+  "time" : {
+    "start" : 1628767220955,
+    "stop" : 1628767221168,
+    "duration" : 213
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8a98a8762a6518df",
+  "name" : "test_003",
+  "time" : {
+    "start" : 1628767221368,
+    "stop" : 1628767221617,
+    "duration" : 249
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b1c30353cce651a",
+  "name" : "获取所有问题列表1",
+  "time" : {
+    "start" : 1628767221171,
+    "stop" : 1628767221362,
+    "duration" : 191
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]
