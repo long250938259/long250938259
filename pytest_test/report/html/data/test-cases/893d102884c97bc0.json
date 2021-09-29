@@ -1,12 +1,12 @@
 {
-  "uid" : "8a98a8762a6518df",
+  "uid" : "893d102884c97bc0",
   "name" : "test_003",
   "fullName" : "options.test_in_theaters.TestClass#test_003",
   "historyId" : "5f7add8f4f706c97082229dcf38d54b6",
   "time" : {
-    "start" : 1628767221368,
-    "stop" : 1628767221617,
-    "duration" : 249
+    "start" : 1632741505844,
+    "stop" : 1632741506104,
+    "duration" : 260
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,25 +16,25 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "272d0d812e49b980",
+      "uid" : "749df31103deb0ec",
       "name" : "stdout",
-      "source" : "272d0d812e49b980.txt",
+      "source" : "749df31103deb0ec.txt",
       "type" : "text/plain",
       "size" : 33
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
+    "hasContent" : true,
     "stepsCount" : 0,
-    "hasContent" : true
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "epic",
-    "value" : "epic_platform"
-  }, {
     "name" : "feature",
     "value" : "设置"
+  }, {
+    "name" : "epic",
+    "value" : "epic_platform"
   }, {
     "name" : "story",
     "value" : "辅助面板设置"
@@ -55,7 +55,7 @@
     "value" : "DESKTOP-62DMK9D"
   }, {
     "name" : "thread",
-    "value" : "12940-MainThread"
+    "value" : "5016-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -75,10 +75,18 @@
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "f3ee393f9790f406",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628767221368,
+        "stop" : 1628767221617,
+        "duration" : 249
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ "transfer" ]
   },
-  "source" : "8a98a8762a6518df.json",
+  "source" : "893d102884c97bc0.json",
   "parameterValues" : [ ]
 }

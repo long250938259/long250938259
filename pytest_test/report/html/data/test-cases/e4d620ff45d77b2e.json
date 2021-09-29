@@ -1,12 +1,12 @@
 {
-  "uid" : "52f6f58ca51d7259",
-  "name" : "获取所有问题列表",
-  "fullName" : "options.test_in_theaters.TestClass#test_001",
-  "historyId" : "332df1de79d354f13fa3490c19d7f573",
+  "uid" : "e4d620ff45d77b2e",
+  "name" : "获取所有问题列表1",
+  "fullName" : "options.test_in_theaters.TestClass#test_002",
+  "historyId" : "131ce47114b02d03d783149b87a85a18",
   "time" : {
-    "start" : 1628767220955,
-    "stop" : 1628767221168,
-    "duration" : 213
+    "start" : 1628767221171,
+    "stop" : 1628767221362,
+    "duration" : 191
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,17 +16,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "9de030174d85b276",
+      "uid" : "ec2deb3f5983fa2f",
       "name" : "stdout",
-      "source" : "9de030174d85b276.txt",
+      "source" : "ec2deb3f5983fa2f.txt",
       "type" : "text/plain",
       "size" : 27
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
+    "hasContent" : true,
     "stepsCount" : 0,
-    "hasContent" : true
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -77,14 +77,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "critical",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ "transfer", "critical" ]
   },
-  "source" : "52f6f58ca51d7259.json",
+  "source" : "e4d620ff45d77b2e.json",
   "parameterValues" : [ ]
 }

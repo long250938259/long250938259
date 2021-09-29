@@ -9,39 +9,39 @@
         "name" : "TestClass",
         "children" : [ {
           "name" : "获取所有问题列表",
-          "uid" : "52f6f58ca51d7259",
+          "uid" : "8c7e275a4aee8dcf",
           "parentUid" : "219c7d75cb72c90becc47e811dd016ac",
           "status" : "passed",
           "time" : {
-            "start" : 1628767220955,
-            "stop" : 1628767221168,
-            "duration" : 213
+            "start" : 1632741505411,
+            "stop" : 1632741505606,
+            "duration" : 195
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "获取所有问题列表1",
-          "uid" : "2b1c30353cce651a",
+          "uid" : "c1b2710a99b37fd4",
           "parentUid" : "219c7d75cb72c90becc47e811dd016ac",
           "status" : "passed",
           "time" : {
-            "start" : 1628767221171,
-            "stop" : 1628767221362,
-            "duration" : 191
+            "start" : 1632741505609,
+            "stop" : 1632741505834,
+            "duration" : 225
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_003",
-          "uid" : "8a98a8762a6518df",
+          "uid" : "893d102884c97bc0",
           "parentUid" : "219c7d75cb72c90becc47e811dd016ac",
           "status" : "passed",
           "time" : {
-            "start" : 1628767221368,
-            "stop" : 1628767221617,
-            "duration" : 249
+            "start" : 1632741505844,
+            "stop" : 1632741506104,
+            "duration" : 260
           },
           "flaky" : false,
           "newFailed" : false,

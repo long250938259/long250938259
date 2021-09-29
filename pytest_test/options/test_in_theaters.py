@@ -17,24 +17,25 @@ class TestClass(tranfer_common):
     def test_001(self):
         settings_msg_before_transfer = "我是转接的话术呀~~~"
         self.ome(settings=settings_msg_before_transfer)
+    #
+    # @allure.title('获取所有问题列表1')
+    # @pytest.mark.critical
+    # @allure.severity('critical')
+    # def test_002(self):
+    #     s = "~~1~~"
+    #     self.omea(settingsa=s)
+    #
+    # def test_003(self):
+    #     shop_id = "5ec76879edbe97000f8d850c"
+    #     question_id = "504820385"
+    #     self.add_shop_tranfer(shop_id=shop_id, questions_ids=question_id)
 
-    @allure.title('获取所有问题列表1')
-    @pytest.mark.critical
-    @allure.severity('critical')
-    def test_002(self):
-        s = "~~1~~"
-        self.omea(settingsa=s)
 
-    def test_003(self):
-        shop_id = "5ec76879edbe97000f8d850c"
-        question_id = "504820385"
-        self.add_shop_tranfer(shop_id=shop_id, questions_ids=question_id)
-
-
-if __name__ == '__main__':
-    pytest.main(['--alluredir', 'D:/ll/dj/long250938259/pytest_test/report'])
+# if __name__ == '__main__':
+#     pytest.main()
+    # pytest.main(['--alluredir', 'D:/ll/dj/long250938259/pytest_test/report'])
     # allure转换成---html并打开测试报告
-    os.system('cd D:/ll/dj/long250938259/pytest_test')
+    # os.system('cd D:/ll/dj/long250938259/pytest_test')
     # 清理上次的报告并生成新的报告
-    os.system('allure generate D:/ll/dj/long250938259/pytest_test/report -o D:/ll/dj/long250938259/pytest_test//report/html --clean')
-    os.system('allure serve D:/ll/dj/long250938259/pytest_test/report')
+    # os.system('allure generate D:/ll/dj/long250938259/pytest_test/report -o D:/ll/dj/long250938259/pytest_test//report/html --clean')
+    # os.system('allure serve D:/ll/dj/long250938259/pytest_test/report')

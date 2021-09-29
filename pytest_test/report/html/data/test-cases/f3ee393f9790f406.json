@@ -1,12 +1,12 @@
 {
-  "uid" : "2b1c30353cce651a",
-  "name" : "获取所有问题列表1",
-  "fullName" : "options.test_in_theaters.TestClass#test_002",
-  "historyId" : "131ce47114b02d03d783149b87a85a18",
+  "uid" : "f3ee393f9790f406",
+  "name" : "test_003",
+  "fullName" : "options.test_in_theaters.TestClass#test_003",
+  "historyId" : "5f7add8f4f706c97082229dcf38d54b6",
   "time" : {
-    "start" : 1628767221171,
-    "stop" : 1628767221362,
-    "duration" : 191
+    "start" : 1628767221368,
+    "stop" : 1628767221617,
+    "duration" : 249
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,23 +16,20 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "b353be86c1fb54aa",
+      "uid" : "f398f0a3d60e72e9",
       "name" : "stdout",
-      "source" : "b353be86c1fb54aa.txt",
+      "source" : "f398f0a3d60e72e9.txt",
       "type" : "text/plain",
-      "size" : 27
+      "size" : 33
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
+    "hasContent" : true,
     "stepsCount" : 0,
-    "hasContent" : true
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
   },
   "afterStages" : [ ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "critical"
-  }, {
     "name" : "epic",
     "value" : "epic_platform"
   }, {
@@ -41,9 +38,6 @@
   }, {
     "name" : "story",
     "value" : "辅助面板设置"
-  }, {
-    "name" : "tag",
-    "value" : "critical"
   }, {
     "name" : "tag",
     "value" : "transfer"
@@ -77,14 +71,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "critical",
-    "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ "transfer", "critical" ]
+    "tags" : [ "transfer" ]
   },
-  "source" : "2b1c30353cce651a.json",
+  "source" : "f3ee393f9790f406.json",
   "parameterValues" : [ ]
 }
