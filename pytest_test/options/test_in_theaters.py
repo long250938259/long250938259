@@ -25,7 +25,7 @@ class TestClass(tranfer_common):
     @pytest.mark.critical
     @allure.severity('critical')
     def test_002(self):
-        keyword = "我去试试"
+        keyword = "你好"
         self.question_key_word_search_hits(shop_id=shop_id, keyword=keyword)
 
     #
