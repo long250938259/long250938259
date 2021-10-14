@@ -4,6 +4,7 @@ import pytest
 import allure
 import os
 from pytest_test.options.options_common import tranfer_common
+shop_id = "5ec76879edbe97000f8d850c"
 
 @allure.epic("epic_platform")
 @allure.feature('设置')
@@ -17,6 +18,16 @@ class TestClass(tranfer_common):
     def test_001(self):
         settings_msg_before_transfer = "我是转接的话术呀~~~"
         self.ome(settings=settings_msg_before_transfer)
+
+
+
+    @allure.title('搜索问题')
+    @pytest.mark.critical
+    @allure.severity('critical')
+    def test_002(self):
+        keyword = "你好"
+        self.question_key_word_search_hits(shop_id=shop_id, keyword=keyword)
+
     #
     # @allure.title('获取所有问题列表1')
     # @pytest.mark.critical

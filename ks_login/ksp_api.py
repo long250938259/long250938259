@@ -12,6 +12,7 @@ class TransferApi(object):
         self.target_url = "https://ks4.xiaoduoai.com"
         self.admin_xdservice_edit_my = "/api/admin/xdservice/edit_my"
         self.admin_config2_add_shop_transfer_v2 = "/api/admin/config2/add_shop_transfer/v2"
+        self.condition_reply_admin_shop_search_global_cond_search = "/api/condition_reply_admin/shop/search/global/cond_answer"
 
     def edit_my_tranfer(self, settings_msg_before_transfer):
         url = self.target_url + self.admin_xdservice_edit_my
@@ -41,6 +42,23 @@ class TransferApi(object):
         json_res = json.loads(res.text)
         print(json_res)
         return json_res
+
+    def question_key_word_search_method(self, shop_id, keyword):
+        url = self.target_url + self.condition_reply_admin_shop_search_global_cond_search
+        global_search_related = {
+            "keyword": keyword,
+            "main_type": "question",
+            "question_type": ""
+
+        }
+        data = {
+            "global_search_related": global_search_related,
+            "shop_id": shop_id
+        }
+        res = requests.post(url=url, data=data, headers=headers)
+        json_res = json.loads(res.txt)
+        return json_res
+
 
 
 # if __name__ == "__main__":
