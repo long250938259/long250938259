@@ -16,7 +16,7 @@ class TestClass(tranfer_common):
     @pytest.mark.critical
     @allure.severity('critical')
     def test_001(self):
-        settings_msg_before_transfer = "我是转接的话术呀~~~1"
+        settings_msg_before_transfer = "aasssssssssss"
         self.ome(settings=settings_msg_before_transfer)
 
 
