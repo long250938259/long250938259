@@ -12,7 +12,7 @@ shop_id = "5ec76879edbe97000f8d850c"
 @pytest.mark.transfer
 class TestClass(tranfer_common):
 
-    @allure.title('获取所有问题列表')
+    @allure.title('修改转接话术')
     @pytest.mark.critical
     @allure.severity('critical')
     def test_001(self):
