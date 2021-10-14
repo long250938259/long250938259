@@ -16,7 +16,7 @@ class TestClass(tranfer_common):
     @pytest.mark.critical
     @allure.severity('critical')
     def test_001(self):
-        settings_msg_before_transfer = "我是转接的话术呀~~~"
+        settings_msg_before_transfer = "我是转接的话术呀~~~1"
         self.ome(settings=settings_msg_before_transfer)
 
 
@@ -25,7 +25,7 @@ class TestClass(tranfer_common):
     @pytest.mark.critical
     @allure.severity('critical')
     def test_002(self):
-        keyword = "你好"
+        keyword = "我去试试"
         self.question_key_word_search_hits(shop_id=shop_id, keyword=keyword)
 
     #

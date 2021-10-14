@@ -55,8 +55,51 @@ class TransferApi(object):
             "global_search_related": global_search_related,
             "shop_id": shop_id
         }
-        res = requests.post(url=url, data=data, headers=headers)
-        json_res = json.loads(res.txt)
+        json_data = {
+            "global_search_related": {
+                "main_type": "question",
+                "question_type": "question_b",
+                "keyword": keyword
+            },
+            "common_search_related": {
+                "sale_statuses": ["1.*", "1.1001", "1.1002", "1.1003", "2.*", "2.2001", "3.*", "3.3001", "3.3002",
+                                  "4.*", "4.4001", "4.4002", "4.4003", "4.4004", "4.4005", "4.4006", "4.4007", "4.4008",
+                                  "4.4009"],
+                "ageing": [""],
+                "hybrid_auto_send": 0,
+                "full_auto_send": 0,
+                "reply_sequence": 0,
+                "customer_group": [],
+                "goods_attribute": [],
+                "vars": []
+            },
+            "goods_related": {
+                "associated_with_goods": 0,
+                "onsale": False,
+                "goods_id": []
+            },
+            "goods_category_related": {
+                "associated_with_goods_category": 0,
+                "goods_category_ids": []
+            },
+            "precise_intent_related": {
+                "associated_with_precise_intent": 0,
+                "precise_intent_name": "",
+                "precise_intent_keyword": ""
+            },
+            "question_related": {
+                "is_rhetorical": 0
+            },
+            "show_realted": {
+                "skip": 0,
+                "limit": 20,
+                "sort_by": ""
+            },
+            "shop_id": shop_id
+        }
+        res = requests.post(url=url, json=json_data, headers=headers)
+        json_res = json.loads(res.text)
+        print(json_res)
         return json_res
 
 
