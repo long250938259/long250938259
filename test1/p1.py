@@ -33,3 +33,11 @@
 # res = requests
 # res1 = res.post(url=url, json=data )
 # print(res1.json())
+
+# !/usr/bin/python3
+
+for i in range(1, 10):
+    print()
+    for j in range(1, i + 1):
+        print("%d*%d=%d" % (i, j, i * j), end=" ")
+
