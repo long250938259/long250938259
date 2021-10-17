@@ -1,5 +1,7 @@
 # import requests
-#
+
+import base64
+
 # data = {
 #     "requestId": "303fe1ca-9d76-45e3-ac3e-41f6aa35a994",
 #     "createTime": 0,
@@ -36,8 +38,21 @@
 
 # !/usr/bin/python3
 
-for i in range(1, 10):
-    print()
-    for j in range(1, i + 1):
-        print("%d*%d=%d" % (i, j, i * j), end=" ")
+# def encryption(st):
+#     encode1 = base64.b64encode(st.encode('utf-8'))
+#     return str(encode1, 'utf-8')
+#
+#
+# def decrypt(st):
+#     decode1 = base64.b64decode(st)
+#     return str(decode1, 'utf-8')
+#
+#
+# a = encryption("lilong")
+# print(a)
+# b = decrypt(a)
+# print(b)
 
+a = "lilong"
+b = a.encode('utf-8')
+print(b)
