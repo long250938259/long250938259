@@ -1,13 +1,13 @@
 # from onjira import onjira_api
 import requests
 from datetime import date, datetime, timedelta
-from test1 import testtoemail
+# from test1 import testtoemail
 import calendar
 import base64
 from jira import JIRA
 import smtplib
 from email.mime.text import MIMEText
-from email.mime.image import MIMEImage
+# from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 # from onjira import const
 
