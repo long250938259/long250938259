@@ -52,7 +52,11 @@ import base64
 # print(a)
 # b = decrypt(a)
 # print(b)
-
-a = "lilong"
-b = a.encode('utf-8')
-print(b)
+result_support_list = {}
+reslut = "发官"
+print(type(result_support_list))
+print(result_support_list.get(reslut))
+print(result_support_list)
+result_support_list[reslut] = 1
+print(result_support_list)
+print(result_support_list.get(reslut))
