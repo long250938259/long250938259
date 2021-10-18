@@ -1,6 +1,7 @@
 # from onjira import onjira_api
 import requests
 from datetime import date, datetime, timedelta
+from test1 import testtoemail
 import calendar
 import base64
 from jira import JIRA
@@ -497,7 +498,7 @@ if __name__ == '__main__':
     print(ew.text_deal(wd))
     # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[7][2])  # 快手
     to = '250938259@qq.com'
-    send_email_by_qq(to, ew.text_deal(wd))
+    testtoemail.send_email_by_qq(to, ew.text_deal(wd))
 
     # ew = EveryWeek(f_day1, t_day1, group_list[8][0], group_list[8][1])
     # print(group_list[8][2])
