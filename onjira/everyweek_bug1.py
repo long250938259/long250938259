@@ -1,16 +1,89 @@
-from onjira import onjira_api
+# from onjira import onjira_api
 import requests
 from datetime import date, datetime, timedelta
 from test1 import testtoemail
 import calendar
+import base64
+from jira import JIRA
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+# from onjira import const
 
 
-jira_api = onjira_api.JiraApi()
+# jira_api = onjira_api.JiraApi()
+# jira = jira_api.login()
+jira_url = "https://jira.xiaoduoai.com"
+email_user_name = "bGlsb25n"
+# email_password = "c3VuZGF5MTU1USM="
+email_password="WGlhb2R1bzIwMjA="
+
+
+def send_email_by_qq(to, file_name):
+    mailserver = "smtp.163.com"
+    sender = "long250938259@163.com"
+    reciver = "250938259@qq.com"
+    passwd= "DSKYGJIOVIYIKBGC"
+
+    text_info = file_name
+    text_sub = MIMEText(text_info, _subtype="plain", _charset="utf-8")
+
+    message = MIMEMultipart("alternative")
+    subject = 'python sendemail test successful'
+    message['From'] = sender
+    message['To'] = to
+    message['subject'] = subject
+    message.attach(text_sub)
+
+    # txt_file = open(file_name, 'rb').read()
+    # txt = MIMEText(txt_file, 'base64', 'utf-8')
+    # txt["Content-Type"] = 'application/octet-stream'
+    # # 以下代码可以重命名附件为hello_world.txt
+    # txt.add_header('Content-Disposition', 'attachment', filename=file_name.split("\\")[-1])
+    # message.attach(txt)
+
+
+
+    try:
+        server = smtplib.SMTP()
+        server.connect(mailserver, 25)
+
+        # server.ehlo()  # 向Gamil发送SMTP 'ehlo' 命令
+        # server.starttls()
+        server.login(sender, passwd)
+        server.sendmail(sender, reciver, message.as_string())
+        server.quit()
+        print('sendemail successful!')
+    except Exception as e:
+        print('sendemail failed next is the reason')
+        print(e)
+
+
+
+class JiraApi(object):
+    global jira_url
+
+
+    def encryption(self, st):
+        encode = base64.b64encode(st.encode('utf-8'))
+        return str(encode, 'utf-8')
+
+    def decrypt(self, st):
+        decode = base64.b64decode(st)
+        return str(decode, 'utf-8')
+
+    def login(self):
+        user_name = self.decrypt(email_user_name)
+        password = self.decrypt(email_password)
+        jirap = JIRA(basic_auth=(user_name, password), options={
+            'server': jira_url})
+        return jirap
+
+
+
+jira_api = JiraApi()
 jira = jira_api.login()
-
-
-
-
 """
 每周线上bug情况数据（需要jenkins建立任务）
 1.添加对应BUG模块：product字段(BUG模块，暂定按BUG模块来处理)，如product_cxxl，需要和jira对应
@@ -425,7 +498,7 @@ if __name__ == '__main__':
     print(ew.text_deal(wd))
     # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[7][2])  # 快手
     to = '250938259@qq.com'
-    email = testtoemail.send_email_by_qq(to, ew.text_deal(wd))
+    send_email_by_qq(to, ew.text_deal(wd))
 
     # ew = EveryWeek(f_day1, t_day1, group_list[8][0], group_list[8][1])
     # print(group_list[8][2])
