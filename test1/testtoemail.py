@@ -9,7 +9,7 @@ def send_email_by_qq(to, file_name):
     reciver = "250938259@qq.com"
     passwd= "DSKYGJIOVIYIKBGC"
 
-    text_info = "hello ,111"
+    text_info = file_name
     text_sub = MIMEText(text_info, _subtype="plain", _charset="utf-8")
 
     message = MIMEMultipart("alternative")
@@ -19,12 +19,12 @@ def send_email_by_qq(to, file_name):
     message['subject'] = subject
     message.attach(text_sub)
 
-    txt_file = open(file_name, 'rb').read()
-    txt = MIMEText(txt_file, 'base64', 'utf-8')
-    txt["Content-Type"] = 'application/octet-stream'
-    # 以下代码可以重命名附件为hello_world.txt
-    txt.add_header('Content-Disposition', 'attachment', filename=file_name.split("\\")[-1])
-    message.attach(txt)
+    # txt_file = open(file_name, 'rb').read()
+    # txt = MIMEText(txt_file, 'base64', 'utf-8')
+    # txt["Content-Type"] = 'application/octet-stream'
+    # # 以下代码可以重命名附件为hello_world.txt
+    # txt.add_header('Content-Disposition', 'attachment', filename=file_name.split("\\")[-1])
+    # message.attach(txt)
 
 
 

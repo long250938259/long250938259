@@ -1,11 +1,13 @@
 from onjira import onjira_api
 import requests
 from datetime import date, datetime, timedelta
+from test1 import testtoemail
 import calendar
 
 
 jira_api = onjira_api.JiraApi()
 jira = jira_api.login()
+
 
 
 
@@ -418,15 +420,18 @@ if __name__ == '__main__':
     #         print(ew.text_deal(wd))
     #         # ew.send_to_feishu_developer(ew.text_deal(wd), group[2])
 
-    # ew = EveryWeek(f_day1, t_day1, group_list[7][0], group_list[7][1])
-    # print(group_list[7][2])
-    # print(ew.text_deal(wd))
-    # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[7][2]) #快手
-
-    ew = EveryWeek(f_day1, t_day1, group_list[8][0], group_list[8][1])
-    print(group_list[8][2])
+    ew = EveryWeek(f_day1, t_day1, group_list[7][0], group_list[7][1])
+    print(group_list[7][2])
     print(ew.text_deal(wd))
+    # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[7][2])  # 快手
+    to = '250938259@qq.com'
+    email = testtoemail.send_email_by_qq(to, ew.text_deal(wd))
+
+    # ew = EveryWeek(f_day1, t_day1, group_list[8][0], group_list[8][1])
+    # print(group_list[8][2])
+    # print(ew.text_deal(wd))
     # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[8][2])  # 京东
+    # email = testtoemail.send_email_by_qq(ew.text_deal(wd))
 
 
 
