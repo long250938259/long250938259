@@ -52,11 +52,11 @@ import base64
 # print(a)
 # b = decrypt(a)
 # print(b)
-result_support_list = {}
-reslut = "发官"
-print(type(result_support_list))
-print(result_support_list.get(reslut))
-print(result_support_list)
-result_support_list[reslut] = 1
-print(result_support_list)
-print(result_support_list.get(reslut))
+import sys
+import os
+curPath = os.path.abspath(os.path.dirname(__file__))
+print(curPath)
+rootPath = os.path.split(curPath)[0]
+print(rootPath)
+sys.path.append(rootPath)
+print(sys.path.append(rootPath))

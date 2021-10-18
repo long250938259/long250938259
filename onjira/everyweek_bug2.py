@@ -10,6 +10,8 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 # from onjira import const
+import sys
+import os
 
 
 # jira_api = onjira_api.JiraApi()
@@ -476,6 +478,9 @@ class EveryWeek:
 
 
 if __name__ == '__main__':
+    curPath = os.path.abspath(os.path.dirname(__file__))
+    rootPath = os.path.split(curPath)[0]
+    sys.path.append(rootPath)
     # 向对应分飞书群发送消息
     # send_to_feishu_developer(bugs_data_deal(), jqr_url)
     wd = 7  # 维度，单位天
