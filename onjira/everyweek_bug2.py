@@ -22,44 +22,44 @@ email_user_name = "bGlsb25n"
 email_password="WGlhb2R1bzIwMjA="
 
 
-def send_email_by_qq(to, file_name):
-    mailserver = "smtp.163.com"
-    sender = "long250938259@163.com"
-    reciver = "250938259@qq.com"
-    passwd= "DSKYGJIOVIYIKBGC"
-
-    text_info = file_name
-    text_sub = MIMEText(text_info, _subtype="plain", _charset="utf-8")
-
-    message = MIMEMultipart("alternative")
-    subject = 'python sendemail test successful'
-    message['From'] = sender
-    message['To'] = to
-    message['subject'] = subject
-    message.attach(text_sub)
-
-    # txt_file = open(file_name, 'rb').read()
-    # txt = MIMEText(txt_file, 'base64', 'utf-8')
-    # txt["Content-Type"] = 'application/octet-stream'
-    # # 以下代码可以重命名附件为hello_world.txt
-    # txt.add_header('Content-Disposition', 'attachment', filename=file_name.split("\\")[-1])
-    # message.attach(txt)
-
-
-
-    try:
-        server = smtplib.SMTP()
-        server.connect(mailserver, 25)
-
-        # server.ehlo()  # 向Gamil发送SMTP 'ehlo' 命令
-        # server.starttls()
-        server.login(sender, passwd)
-        server.sendmail(sender, reciver, message.as_string())
-        server.quit()
-        print('sendemail successful!')
-    except Exception as e:
-        print('sendemail failed next is the reason')
-        print(e)
+# def send_email_by_qq(to, file_name):
+#     mailserver = "smtp.163.com"
+#     sender = "long250938259@163.com"
+#     reciver = "250938259@qq.com"
+#     passwd= "DSKYGJIOVIYIKBGC"
+#
+#     text_info = file_name
+#     text_sub = MIMEText(text_info, _subtype="plain", _charset="utf-8")
+#
+#     message = MIMEMultipart("alternative")
+#     subject = 'python sendemail test successful'
+#     message['From'] = sender
+#     message['To'] = to
+#     message['subject'] = subject
+#     message.attach(text_sub)
+#
+#     # txt_file = open(file_name, 'rb').read()
+#     # txt = MIMEText(txt_file, 'base64', 'utf-8')
+#     # txt["Content-Type"] = 'application/octet-stream'
+#     # # 以下代码可以重命名附件为hello_world.txt
+#     # txt.add_header('Content-Disposition', 'attachment', filename=file_name.split("\\")[-1])
+#     # message.attach(txt)
+#
+#
+#
+#     try:
+#         server = smtplib.SMTP()
+#         server.connect(mailserver, 25)
+#
+#         # server.ehlo()  # 向Gamil发送SMTP 'ehlo' 命令
+#         # server.starttls()
+#         server.login(sender, passwd)
+#         server.sendmail(sender, reciver, message.as_string())
+#         server.quit()
+#         print('sendemail successful!')
+#     except Exception as e:
+#         print('sendemail failed next is the reason')
+#         print(e)
 
 
 
@@ -480,7 +480,7 @@ class EveryWeek:
 if __name__ == '__main__':
     curPath = os.path.abspath(os.path.dirname(__file__))
     rootPath = os.path.split(curPath)[0]
-    sys.path.append(rootPath)
+    sys.path.append("/home/jenkins/workspace/alu2/test1")
     # 向对应分飞书群发送消息
     # send_to_feishu_developer(bugs_data_deal(), jqr_url)
     wd = 7  # 维度，单位天

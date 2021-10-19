@@ -3,6 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 
+
 def send_email_by_qq(to, file_name):
     mailserver = "smtp.163.com"
     sender = "long250938259@163.com"

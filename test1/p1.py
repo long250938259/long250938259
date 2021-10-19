@@ -59,4 +59,5 @@ print(curPath)
 rootPath = os.path.split(curPath)[0]
 print(rootPath)
 sys.path.append(rootPath)
-print(sys.path.append(rootPath))
+print(type(sys.path.append(rootPath)))
+print(sys.path)
