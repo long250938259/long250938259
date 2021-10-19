@@ -7,7 +7,7 @@ import base64
 from jira import JIRA
 import os
 import sys
-sys.path.append(os.path.join(os.path.abspath("."), "test1"))
+sys.path.append("/home/jenkins/workspace/alu2/test1")
 import test1
 import smtplib
 from email.mime.text import MIMEText
