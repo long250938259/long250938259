@@ -1,6 +1,7 @@
 # import requests
 
 import base64
+import datetime
 
 # data = {
 #     "requestId": "303fe1ca-9d76-45e3-ac3e-41f6aa35a994",
@@ -51,10 +52,3 @@ import base64
 # a = encryption("lilong")
 # print(a)
 # b = decrypt(a)
-# print(b)
-import sys
-import os
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-print(curPath)
-print(rootPath)

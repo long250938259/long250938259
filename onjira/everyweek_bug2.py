@@ -1,22 +1,20 @@
 # from onjira import onjira_api
 import requests
 from datetime import date, datetime, timedelta
-from test1 import testtoemail
+
 import calendar
 import base64
 from jira import JIRA
 import os
 import sys
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append("/home/jenkins/workspace/alu2/test1")
+sys.path.append(os.path.join(os.path.abspath("."), "test1"))
+from test1 import testtoemail
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 # from onjira import const
-import sys
-import os
+
 
 
 # jira_api = onjira_api.JiraApi()

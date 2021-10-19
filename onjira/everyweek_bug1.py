@@ -441,8 +441,8 @@ class EveryWeek:
         text_a = ''
         bugs_sum = 0
         for i in range(5):
-            f_day = (datetime.now() - timedelta(days=num * (i + 1))).strftime('%Y-%m-%d')
-            s_day = (datetime.now() - timedelta(days=num * (i + 2))).strftime('%Y-%m-%d')
+            f_day = (datetime.now() - timedelta(days=4) - timedelta(days=num * (i + 1))).strftime('%Y-%m-%d')
+            s_day = (datetime.now() - timedelta(days=4) - timedelta(days=num * (i + 2))).strftime('%Y-%m-%d')
             tt = self.create_bugs(s_day, f_day)[0]
             bugs_sum += int(tt)
             text_a += s_day + "-" + f_day + ": 新增" + tt + '\n'
@@ -479,12 +479,15 @@ if __name__ == '__main__':
     # send_to_feishu_developer(bugs_data_deal(), jqr_url)
     wd = 7  # 维度，单位天
     currentdate = date.today()
+    print(currentdate)
     year = currentdate.year
     month = currentdate.month
     day = currentdate.day
     currentday = calendar.weekday(year, month, day)
-    t_day1 = date.today()
-    f_day1 = (datetime.now() - timedelta(days=wd)).strftime('%Y-%m-%d')
+    print(currentdate)
+    t_day1 = "2021-10-15"
+    # f_day1 = (datetime.now() - timedelta(days=wd)).strftime('%Y-%m-%d')
+    f_day1 = "2021-10-08"
     # if currentday == 4:
     #     for group in group_list:
     #         ew = EveryWeek(f_day1, t_day1, group[0], group[1])
@@ -492,17 +495,17 @@ if __name__ == '__main__':
     #         print(ew.text_deal(wd))
     #         # ew.send_to_feishu_developer(ew.text_deal(wd), group[2])
 
-    ew = EveryWeek(f_day1, t_day1, group_list[7][0], group_list[7][1])
-    print(group_list[7][2])
-    print(ew.text_deal(wd))
-    # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[7][2])  # 快手
-    to = '250938259@qq.com'
-    send_email_by_qq(to, ew.text_deal(wd))
-
-    # ew = EveryWeek(f_day1, t_day1, group_list[8][0], group_list[8][1])
-    # print(group_list[8][2])
+    # ew = EveryWeek(f_day1, t_day1, group_list[7][0], group_list[7][1])
+    # print(group_list[7][2])
     # print(ew.text_deal(wd))
-    # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[8][2])  # 京东
+    # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[7][2])  # 快手
+    # to = '250938259@qq.com'
+    # send_email_by_qq(to, ew.text_deal(wd))
+
+    ew = EveryWeek(f_day1, t_day1, group_list[8][0], group_list[8][1])
+    print(group_list[8][2])
+    print(ew.text_deal(wd))
+    ew.send_to_feishu_developer(ew.text_deal(wd), group_list[8][2])  # 京东
     # email = testtoemail.send_email_by_qq(ew.text_deal(wd))
 
 
