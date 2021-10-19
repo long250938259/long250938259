@@ -7,8 +7,11 @@ import base64
 from jira import JIRA
 import os
 import sys
-sys.path.append("/home/jenkins/workspace/alu2/test1")
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 from test1 import testtoemail
+
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
@@ -481,6 +484,9 @@ class EveryWeek:
 
 
 if __name__ == '__main__':
+    curPath = os.path.abspath(os.path.dirname(__file__))
+    rootPath = os.path.split(curPath)[0]
+    sys.path.append(rootPath)
 
     # 向对应分飞书群发送消息
     # send_to_feishu_developer(bugs_data_deal(), jqr_url)
