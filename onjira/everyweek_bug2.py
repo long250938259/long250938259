@@ -8,7 +8,7 @@ from jira import JIRA
 import os
 import sys
 sys.path.append("/home/jenkins/workspace/alu2/test1")
-import test1
+from test1 import testtoemail
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
@@ -504,7 +504,7 @@ if __name__ == '__main__':
     print(ew.text_deal(wd))
     # ew.send_to_feishu_developer(ew.text_deal(wd), group_list[7][2])  # 快手
     to = '250938259@qq.com'
-    test1.testtoemail.send_email_by_qq(to, ew.text_deal(wd))
+    testtoemail.send_email_by_qq(to, ew.text_deal(wd))
 
     # ew = EveryWeek(f_day1, t_day1, group_list[8][0], group_list[8][1])
     # print(group_list[8][2])
