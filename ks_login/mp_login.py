@@ -2,6 +2,7 @@ import requests
 import json
 import configparser
 import os
+import readconfig
 
 config = configparser.ConfigParser()
 project_path = os.path.dirname((os.path.dirname(os.path.abspath(__file__))))

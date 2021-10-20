@@ -34,7 +34,7 @@ url = "https://wangcai-test-ks.xiaoduoai.com/spi/chatbotevent"
 
 res = requests
 res1 = res.post(url=url, json=data )
-print(res1.json())
+print(res1)
 
 
 
