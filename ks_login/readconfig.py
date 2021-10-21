@@ -25,9 +25,9 @@ class ReadConfig:
     def getValue(self, env, name):
         return self.cf.get(env, name)
 
-
-ff = open("D:/新建文件夹/new 1.txt", encoding="utf-8")
-data1 = ff.read()
-print(data1[:3])
-print(codecs.BOM_UTF8)
-print(data1[:3] == codecs.BOM_UTF8)
+#
+# ff = open("D:/新建文件夹/new 1.txt", encoding="utf-8")
+# data1 = ff.read()
+# print(data1[:3])
+# print(codecs.BOM_UTF8)
+# print(data1[:3] == codecs.BOM_UTF8)

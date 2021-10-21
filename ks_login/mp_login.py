@@ -2,18 +2,22 @@ import requests
 import json
 import configparser
 import os
-import readconfig
+from ks_login import readconfig
 
 config = configparser.ConfigParser()
 project_path = os.path.dirname((os.path.dirname(os.path.abspath(__file__))))
 config_path = os.path.join(os.path.join(project_path, 'config'), "config.ini")
+# print(config_path)
 config.read(config_path, encoding="utf-8")
+
+config1 = readconfig.ReadConfig(config_path)
 
 
 class ApiLogin(object):
     def __init__(self):
         self.target_url = config.get("ProjectConfig", 'target_url')
-        self.online_login_url = config.get("ProjectConfig", 'online_login_url')
+        # self.online_login_url = config.get("ProjectConfig", 'online_login_url')
+        self.online_login_url = config1.getValue("ProjectConfig", "online_login_url")
         self.login_url = config.get("ProjectConfig", 'login_url')
 
     def login(self, company_name):

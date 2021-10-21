@@ -39,11 +39,11 @@
 
 
 
+from ks_login import load_log
 
-
-
-
-
+log = load_log.Log()
+print(log.filename)
+log.info("``````````````")
 
 
 
