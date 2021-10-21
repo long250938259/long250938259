@@ -1,9 +1,12 @@
 import requests
 import json
 from ks_login import mp_login
+from ks_login import load_log
 
-log = mp_login.ApiLogin()
-headers = log.login(company_name="1901625824")
+log = load_log.Log()
+
+login1 = mp_login.ApiLogin()
+headers = login1.login(company_name="1901625824")
 
 
 class TransferApi(object):
@@ -63,6 +66,7 @@ class TransferApi(object):
             }
         }
         res = requests.post(url=url, json=json_data, headers=headers)
+        log.info(res)
         json_res = json.loads(res.text)
         print(json_res)
         return json_res

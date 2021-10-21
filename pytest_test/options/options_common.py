@@ -1,5 +1,8 @@
 import requests
 from ks_login.ksp_api import TransferApi
+from ks_login import load_log
+
+log = load_log.Log()
 
 
 class tranfer_common(object):
@@ -18,4 +21,5 @@ class tranfer_common(object):
 
     def question_key_word_search_hits(self, shop_id, keyword):
         res = self.tranfer.question_key_word_search_method(shop_id=shop_id, keyword=keyword)
+        log.info("res")
         assert res["code"] == 0
