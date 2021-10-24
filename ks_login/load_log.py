@@ -1,14 +1,17 @@
 import logging
 import os
 import time
+from ks_login import mysql_support
 
 project_abs_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_path = os.path.join(project_abs_path, 'log_file')
+mysql_write_log = mysql_support.MysqlDataGet()
 
 
 class Log(object):
     def __init__(self):
         self.filename = os.path.join(log_path, '{0}.log'.format(time.strftime('%Y-%m-%d')))
+        self.mysql_write_log = mysql_support.MysqlDataGet()
 
     def basicconsole(self, level, message):
         # 创建一个logger
@@ -49,6 +52,7 @@ class Log(object):
         except Exception as e:
             print(e)
         # self.write.write_log(title, 'debug', '自动化测试日志', message)
+        self.mysql_write_log.write_log(log_title=title, log_level="debug", log_category='自动化日志', log_data=message)
         self.basicconsole('debug', time.strftime('%Y-%m-%d %H:%M:%S') + '\t' + message + '\n')
 
     def info(self, message=None, title='日志'):
@@ -60,6 +64,7 @@ class Log(object):
         except Exception as e:
             print(e)
         # self.write.write_log(title, 'info', '自动化测试日志', message)
+        self.mysql_write_log.write_log(log_title=title, log_level="info", log_category='自动化日志', log_data=message)
         self.basicconsole('info', time.strftime('%Y-%m-%d %H:%M:%S') + '\t' + message + '\n')
 
     def warning(self, message=None, title='日志'):
@@ -71,6 +76,7 @@ class Log(object):
         except Exception as e:
             print(e)
         # self.write.write_log(title, 'warning', '自动化测试日志', message)
+        self.mysql_write_log.write_log(log_title=title, log_level="warning", log_category='自动化日志', log_data=message)
         self.basicconsole('warning', time.strftime('%Y-%m-%d %H:%M:%S') + '\t'  + message + '\n')
 
     def error(self, message=None, title='日志'):
@@ -82,6 +88,7 @@ class Log(object):
         except Exception as e:
             print(e)
         # self.write.write_log(title, 'error', '自动化测试日志', message)
+        self.mysql_write_log.write_log(log_title=title, log_level="error", log_category='自动化日志', log_data=message)
         self.basicconsole('error', time.strftime('%Y-%m-%d %H:%M:%S') + '\t' + message + '\n')
 
 

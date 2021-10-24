@@ -36,87 +36,24 @@
 # res1 = res.post(url=url, json=data )
 # print(res1)
 #
-import xlrd
+from ks_login import load_log
+import time
+from ks_login import mysql_support
 
 
-data = xlrd.open_workbook("D:/新建文件夹/tbp-tst/testdata/sizechart_test.xlsx")
-table = data.sheets()[0]
-test_data = []
-print(table.nrows)
-
-for i in range(1, table.nrows):
-    # 对应excel表格的类目
-    category_name = table.row_values(i)[0]
-    # print(category_name)
-    # 对应excel表格的尺码表类型
-    sizechart = table.row_values(i)[1]
-    # print(sizechart)
-    # 对应excel表格的用例标题
-    case_name = table.row_values(i)[2]
-    # print(case_name)
-    # 对应excel表格的咨询问题
-    answer = table.row_values(i)[4]
-    answer_list = [answer]
-    # print(answer)
-    # print(answer_list)
-    # 对应excel表格的预期回复结果
-    expect = table.row_values(i)[5]
-    expect_list = [expect]
-    # print(expect)
-    # print(expect_list)
-
-    data = [category_name, sizechart, case_name, answer_list, expect_list]
-    test_data.append(data)
-    # print(test_data)
-
-# 清洗数据格式，需要把数据组装成下列格式
-# ["类目标题", "尺码表类型", ["咨询问题1", "咨询问题2", "咨询问题3"],["预期回复结果1", "预期回复结果2","预期回复结果3"]]
-# 第一步清洗：将合并的单元格中为空的值进行补充
-for i in range(0, len(test_data)):
-
-    category_name = test_data[i][0]
-    sizechart_name = test_data[i][1]
-    case_name = test_data[i][2]
-
-    if category_name == "":
-
-        test_data[i][0] = test_data[i - 1][0]
-        # print(test_data)
-
-        if sizechart_name == "":
-
-            test_data[i][1] = test_data[i - 1][1]
-
-            if case_name == "":
-                test_data[i][2] = test_data[i - 1][2]
-
-# 第二步清洗：将每一行的答案和预期结果组装成答案列表和预期回复列表
-for i in range(0, len(test_data)):
-
-    if i < len(test_data) - 1:
-
-        if test_data[i][0] == test_data[i + 1][0] and test_data[i][1] == test_data[i + 1][1] and test_data[i][2] == \
-                test_data[i + 1][2]:
-            test_data[i][3].extend(test_data[i + 1][3])
+mysql = mysql_support.MysqlDataGet()
 
 
-            b = test_data[i + 1][3] = test_data[i][3]
-            print(b)
-            test_data[i][4].extend(test_data[i + 1][4])
-            test_data[i + 1][4] = test_data[i][4]
+log = load_log.Log()
+log.debug("我是debug日志")
+log.info('我是info日志')
+log.error('我是error日志')
+log.warning('我是warning日志')
 
-            test_data[i] = "0000000"
-            print(i)
-            print(test_data[i])
-
-while "" in test_data:
-    test_data.remove("")
+# mysql.write_log('日志','info','自动化测试','3333~~~')
 
 
-print(test_data)
-print(len(test_data))
-
-
+# print(time.strftime('%Y-%m-%d %H:%M:%S'))
 
 
 

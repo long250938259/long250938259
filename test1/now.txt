@@ -1,8 +1,0 @@
-这个号码
-error级别日志应该都可以获取
-这个时logger2 error
-放在最后的logging error
-这个号码
-error级别日志应该都可以获取
-这个时logger2 error
-放在最后的logging error
