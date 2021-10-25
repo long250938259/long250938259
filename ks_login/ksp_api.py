@@ -15,7 +15,8 @@ class TransferApi(object):
         self.target_url = "https://ks4.xiaoduoai.com"
         self.admin_xdservice_edit_my = "/api/admin/xdservice/edit_my"
         self.admin_config2_add_shop_transfer_v2 = "/api/admin/config2/add_shop_transfer/v2"
-        self.condition_reply_admin_shop_search_global_cond_search = "/api/condition_reply_admin/shop/search/global/cond_answer"
+        self.condition_reply_admin_shop_search_global_cond_search = "/api/condition_reply_admin/shop/search/global/cond_answer" #条件搜索
+        self.shop_setup_url = '/api/admin/guide/shop_setup'
 
     def edit_my_tranfer(self, settings_msg_before_transfer):
         url = self.target_url + self.admin_xdservice_edit_my
@@ -66,6 +67,17 @@ class TransferApi(object):
             }
         }
         res = requests.post(url=url, json=json_data, headers=headers)
+        log.info(res)
+        json_res = json.loads(res.text)
+        print(json_res)
+        return json_res
+
+    def set_shop_setup(self, category_id):
+        url = self.target_url + self.shop_setup_url
+        data = {
+            'category_id': category_id
+        }
+        res = requests.post(url=url, json=data, headers=headers)
         log.info(res)
         json_res = json.loads(res.text)
         print(json_res)
