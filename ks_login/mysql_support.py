@@ -21,7 +21,7 @@ class MysqlDataGet(object):
         db_name = 'mysql_support'
         port = '3306'
         # 打开数据库连接
-        db = pymysql.connect(host=host, user=user, password=password, db=db_name, port=int(port))
+        db = pymysql.connect(host=host, user=user, password=password, db=db_name, port=int(port),  charset='utf8')
         # 使用cursor()方法获取操作游标
         cur = db.cursor()
         sql_insert = """insert into log_data_logmodel(log_id, log_title,log_level, log_category, log_data, created_time) 

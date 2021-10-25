@@ -45,10 +45,10 @@ mysql = mysql_support.MysqlDataGet()
 
 
 log = load_log.Log()
-log.debug("我是debug日志")
-log.info('我是info日志')
-log.error('我是error日志')
-log.warning('我是warning日志')
+log.debug("我是debug日志1111")
+log.info('我是info日志111')
+log.error('我是error日志11')
+log.warning('我是warning日志1')
 
 # mysql.write_log('日志','info','自动化测试','3333~~~')
 
