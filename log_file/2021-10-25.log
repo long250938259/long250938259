@@ -14,3 +14,225 @@
 
 2021-10-25 14:14:23,473 - author - WARNING - 2021-10-25 14:14:23	我是warning日志1
 
+2021-10-25 16:18:47,497 - author - INFO - 2021-10-25 16:18:47	<Response [200]>
+
+2021-10-25 16:18:47,514 - author - INFO - 2021-10-25 16:18:47	res
+
+2021-10-25 16:19:48,228 - author - INFO - 2021-10-25 16:19:48	<Response [200]>
+
+2021-10-25 16:19:48,250 - author - INFO - 2021-10-25 16:19:48	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 16:20:44,303 - author - INFO - 2021-10-25 16:20:44	<Response [200]>
+
+2021-10-25 16:20:44,322 - author - INFO - 2021-10-25 16:20:44	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 16:20:44,339 - author - INFO - 2021-10-25 16:20:44	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 16:25:15,385 - author - INFO - 2021-10-25 16:25:15	<Response [200]>
+
+2021-10-25 16:28:11,087 - author - INFO - 2021-10-25 16:28:11	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:28:35,912 - author - INFO - 2021-10-25 16:28:35	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:29:26,763 - author - INFO - 2021-10-25 16:29:26	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:29:26,778 - author - INFO - 2021-10-25 16:29:26	send data:{'category_id': 13118}
+
+2021-10-25 16:29:26,982 - author - INFO - 2021-10-25 16:29:26	get response<Response [200]>
+
+2021-10-25 16:30:00,881 - author - INFO - 2021-10-25 16:30:00	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:30:00,896 - author - INFO - 2021-10-25 16:30:00	send data:{'category_id': 13118}
+
+2021-10-25 16:30:01,112 - author - INFO - 2021-10-25 16:30:01	get response1<Response [200]>
+
+2021-10-25 16:30:01,137 - author - INFO - 2021-10-25 16:30:01	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 16:32:58,545 - author - INFO - 2021-10-25 16:32:58	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:32:58,576 - author - INFO - 2021-10-25 16:32:58	send data:{'category_id': 13117}
+
+2021-10-25 16:32:58,788 - author - INFO - 2021-10-25 16:32:58	get response1<Response [200]>
+
+2021-10-25 16:32:58,802 - author - INFO - 2021-10-25 16:32:58	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 16:43:20,133 - author - INFO - 2021-10-25 16:43:20	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:43:20,163 - author - INFO - 2021-10-25 16:43:20	send data:{'category_id': 13117}
+
+2021-10-25 16:43:20,393 - author - INFO - 2021-10-25 16:43:20	get response1<Response [200]>
+
+2021-10-25 16:43:20,423 - author - INFO - 2021-10-25 16:43:20	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 16:46:55,668 - author - INFO - 2021-10-25 16:46:55	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:46:55,684 - author - INFO - 2021-10-25 16:46:55	send data:{'category_id': 13117}
+
+2021-10-25 16:46:55,890 - author - INFO - 2021-10-25 16:46:55	get response1<Response [200]>
+
+2021-10-25 16:46:55,905 - author - INFO - 2021-10-25 16:46:55	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 16:52:24,908 - author - INFO - 2021-10-25 16:52:24	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 16:52:24,928 - author - INFO - 2021-10-25 16:52:24	send data:{'category_id': 13117}
+
+2021-10-25 16:52:25,148 - author - INFO - 2021-10-25 16:52:25	get response1<Response [200]>
+
+2021-10-25 16:52:25,168 - author - INFO - 2021-10-25 16:52:25	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 16:53:27,436 - author - INFO - 2021-10-25 16:53:27	send urlhttps://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-25 16:53:27,441 - author - INFO - 2021-10-25 16:53:27	send data{'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-25 16:53:28,008 - author - INFO - 2021-10-25 16:53:28	get response{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 16:53:28,026 - author - INFO - 2021-10-25 16:53:28	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 16:54:27,537 - author - INFO - 2021-10-25 16:54:27	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-25 16:54:27,553 - author - INFO - 2021-10-25 16:54:27	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-25 16:54:28,080 - author - INFO - 2021-10-25 16:54:28	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 16:54:28,108 - author - INFO - 2021-10-25 16:54:28	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:10:29,977 - author - INFO - 2021-10-25 17:10:29	{'message': '成功', 'code': 0}
+
+2021-10-25 17:10:56,387 - author - INFO - 2021-10-25 17:10:56	{'message': '成功', 'code': 0}
+
+2021-10-25 17:13:13,935 - author - INFO - 2021-10-25 17:13:13	send url https://ks4.xiaoduoai.com/api/admin/config2/add_shop_transfer/v2
+
+2021-10-25 17:13:13,951 - author - INFO - 2021-10-25 17:13:13	send data {'shop_id': '5ec76879edbe97000f8d850c', 'question_ids': '504820385'}
+
+2021-10-25 17:13:14,212 - author - INFO - 2021-10-25 17:13:14	get response {'message': '成功', 'code': 0}
+
+2021-10-25 17:13:14,240 - author - INFO - 2021-10-25 17:13:14	{'message': '成功', 'code': 0}
+
+2021-10-25 17:17:25,119 - author - INFO - 2021-10-25 17:17:25	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:17:25,135 - author - INFO - 2021-10-25 17:17:25	send data {'settings_robot_prefix': '~~1~~'}
+
+2021-10-25 17:17:25,352 - author - INFO - 2021-10-25 17:17:25	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:25:10,783 - author - INFO - 2021-10-25 17:25:10	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:25:10,799 - author - INFO - 2021-10-25 17:25:10	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+
+2021-10-25 17:25:11,011 - author - INFO - 2021-10-25 17:25:11	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:25:11,030 - author - INFO - 2021-10-25 17:25:11	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-25 17:25:11,043 - author - INFO - 2021-10-25 17:25:11	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-25 17:25:11,584 - author - INFO - 2021-10-25 17:25:11	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:25:11,600 - author - INFO - 2021-10-25 17:25:11	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:25:11,624 - author - INFO - 2021-10-25 17:25:11	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 17:25:11,639 - author - INFO - 2021-10-25 17:25:11	send data:{'category_id': 13117}
+
+2021-10-25 17:25:11,855 - author - INFO - 2021-10-25 17:25:11	get response1<Response [200]>
+
+2021-10-25 17:25:11,875 - author - INFO - 2021-10-25 17:25:11	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 17:25:11,896 - author - INFO - 2021-10-25 17:25:11	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:25:11,912 - author - INFO - 2021-10-25 17:25:11	send data {'settings_robot_prefix': '~~1~~'}
+
+2021-10-25 17:25:12,131 - author - INFO - 2021-10-25 17:25:12	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:25:12,151 - author - INFO - 2021-10-25 17:25:12	send url https://ks4.xiaoduoai.com/api/admin/config2/add_shop_transfer/v2
+
+2021-10-25 17:25:12,177 - author - INFO - 2021-10-25 17:25:12	send data {'shop_id': '5ec76879edbe97000f8d850c', 'question_ids': '504820385'}
+
+2021-10-25 17:25:12,452 - author - INFO - 2021-10-25 17:25:12	get response {'message': '成功', 'code': 0}
+
+2021-10-25 17:28:48,751 - author - INFO - 2021-10-25 17:28:48	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:28:48,767 - author - INFO - 2021-10-25 17:28:48	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+
+2021-10-25 17:28:48,996 - author - INFO - 2021-10-25 17:28:48	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:28:49,025 - author - INFO - 2021-10-25 17:28:49	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-25 17:28:49,042 - author - INFO - 2021-10-25 17:28:49	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-25 17:28:49,497 - author - INFO - 2021-10-25 17:28:49	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:28:49,514 - author - INFO - 2021-10-25 17:28:49	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:28:49,534 - author - INFO - 2021-10-25 17:28:49	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 17:28:49,553 - author - INFO - 2021-10-25 17:28:49	send data:{'category_id': 13117}
+
+2021-10-25 17:28:49,787 - author - INFO - 2021-10-25 17:28:49	get response1<Response [200]>
+
+2021-10-25 17:28:49,796 - author - INFO - 2021-10-25 17:28:49	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 17:28:49,818 - author - INFO - 2021-10-25 17:28:49	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:28:49,835 - author - INFO - 2021-10-25 17:28:49	send data {'settings_robot_prefix': '~~1~~'}
+
+2021-10-25 17:28:50,047 - author - INFO - 2021-10-25 17:28:50	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:28:50,067 - author - INFO - 2021-10-25 17:28:50	send url https://ks4.xiaoduoai.com/api/admin/config2/add_shop_transfer/v2
+
+2021-10-25 17:28:50,081 - author - INFO - 2021-10-25 17:28:50	send data {'shop_id': '5ec76879edbe97000f8d850c', 'question_ids': '504820385'}
+
+2021-10-25 17:28:50,340 - author - INFO - 2021-10-25 17:28:50	get response {'message': '成功', 'code': 0}
+
+2021-10-25 17:29:43,065 - author - INFO - 2021-10-25 17:29:43	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:29:43,081 - author - INFO - 2021-10-25 17:29:43	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+
+2021-10-25 17:29:43,291 - author - INFO - 2021-10-25 17:29:43	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:29:49,212 - author - INFO - 2021-10-25 17:29:49	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-25 17:29:49,226 - author - INFO - 2021-10-25 17:29:49	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-25 17:29:49,647 - author - INFO - 2021-10-25 17:29:49	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:29:49,664 - author - INFO - 2021-10-25 17:29:49	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:42:37,666 - author - INFO - 2021-10-25 17:42:37	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:42:37,682 - author - INFO - 2021-10-25 17:42:37	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+
+2021-10-25 17:42:37,916 - author - INFO - 2021-10-25 17:42:37	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:42:43,209 - author - INFO - 2021-10-25 17:42:43	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:42:43,224 - author - INFO - 2021-10-25 17:42:43	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+
+2021-10-25 17:42:43,436 - author - INFO - 2021-10-25 17:42:43	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:42:43,453 - author - INFO - 2021-10-25 17:42:43	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-25 17:42:43,469 - author - INFO - 2021-10-25 17:42:43	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-25 17:42:44,066 - author - INFO - 2021-10-25 17:42:44	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:42:44,082 - author - INFO - 2021-10-25 17:42:44	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-25 17:42:44,102 - author - INFO - 2021-10-25 17:42:44	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-25 17:42:44,130 - author - INFO - 2021-10-25 17:42:44	send data:{'category_id': 13117}
+
+2021-10-25 17:42:44,357 - author - INFO - 2021-10-25 17:42:44	get response1<Response [200]>
+
+2021-10-25 17:42:44,374 - author - INFO - 2021-10-25 17:42:44	get response2{'message': '成功', 'code': 0}
+
+2021-10-25 17:42:44,394 - author - INFO - 2021-10-25 17:42:44	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-25 17:42:44,409 - author - INFO - 2021-10-25 17:42:44	send data {'settings_robot_prefix': '~~1~~'}
+
+2021-10-25 17:42:44,629 - author - INFO - 2021-10-25 17:42:44	get response {'code': 0, 'message': ''}
+
+2021-10-25 17:42:44,651 - author - INFO - 2021-10-25 17:42:44	send url https://ks4.xiaoduoai.com/api/admin/config2/add_shop_transfer/v2
+
+2021-10-25 17:42:44,668 - author - INFO - 2021-10-25 17:42:44	send data {'shop_id': '5ec76879edbe97000f8d850c', 'question_ids': '504820385'}
+
+2021-10-25 17:42:44,950 - author - INFO - 2021-10-25 17:42:44	get response {'message': '成功', 'code': 0}
+

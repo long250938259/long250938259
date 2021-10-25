@@ -21,5 +21,5 @@ class tranfer_common(object):
 
     def question_key_word_search_hits(self, shop_id, keyword):
         res = self.tranfer.question_key_word_search_method(shop_id=shop_id, keyword=keyword)
-        log.info("res")
+        log.info(res)
         assert res["code"] == 0

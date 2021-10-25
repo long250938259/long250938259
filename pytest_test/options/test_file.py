@@ -28,18 +28,27 @@ class TestClass(tranfer_common):
         keyword = "你好"
         self.question_key_word_search_hits(shop_id=shop_id, keyword=keyword)
 
-    #
-    # @allure.title('获取所有问题列表1')
-    # @pytest.mark.critical
-    # @allure.severity('critical')
-    # def test_002(self):
-    #     s = "~~1~~"
-    #     self.omea(settingsa=s)
-    #
-    # def test_003(self):
-    #     shop_id = "5ec76879edbe97000f8d850c"
-    #     question_id = "504820385"
-    #     self.add_shop_tranfer(shop_id=shop_id, questions_ids=question_id)
+    @allure.title('设置类目')
+    @pytest.mark.critical
+    @allure.severity('critical')
+    def test_003(self):
+        self.tranfer.set_shop_setup(category_id=13117)
+
+
+    @allure.title('设置回复前缀')
+    @pytest.mark.critical
+    @allure.severity('critical')
+    def test_004(self):
+        s = "~~1~~"
+        self.omea(settingsa=s)
+
+    @allure.title('添加转接问题')
+    @pytest.mark.critical
+    @allure.severity('critical')
+    def test_005(self):
+        shop_id = "5ec76879edbe97000f8d850c"
+        question_id = "504820385"
+        self.add_shop_tranfer(shop_id=shop_id, questions_ids=question_id)
 
 
 # if __name__ == '__main__':
