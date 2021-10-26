@@ -6,3 +6,69 @@
 
 2021-10-26 10:46:15,480 - author - WARNING - 2021-10-26 10:46:15	我是warning日志1
 
+2021-10-26 11:17:29,457 - author - INFO - 2021-10-26 11:17:29	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-26 11:17:29,462 - author - INFO - 2021-10-26 11:17:29	send data {'settings_robot_prefix': '~~1~~'}
+
+2021-10-26 11:17:29,686 - author - INFO - 2021-10-26 11:17:29	get response {'code': 0, 'message': ''}
+
+2021-10-26 11:26:10,424 - author - ERROR - 2021-10-26 11:26:10	('list index out of range',)
+
+2021-10-26 11:26:11,337 - author - INFO - 2021-10-26 11:26:11	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-26 11:26:11,352 - author - INFO - 2021-10-26 11:26:11	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+
+2021-10-26 11:26:11,577 - author - INFO - 2021-10-26 11:26:11	get response {'code': 0, 'message': ''}
+
+2021-10-26 11:26:11,594 - author - INFO - 2021-10-26 11:26:11	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-26 11:26:11,614 - author - INFO - 2021-10-26 11:26:11	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-26 11:26:12,261 - author - INFO - 2021-10-26 11:26:12	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-26 11:26:12,276 - author - INFO - 2021-10-26 11:26:12	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-26 11:26:12,294 - author - INFO - 2021-10-26 11:26:12	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-26 11:26:12,310 - author - INFO - 2021-10-26 11:26:12	send data:{'category_id': 13117}
+
+2021-10-26 11:26:12,524 - author - INFO - 2021-10-26 11:26:12	get response1<Response [200]>
+
+2021-10-26 11:26:12,540 - author - INFO - 2021-10-26 11:26:12	get response2{'message': '成功', 'code': 0}
+
+2021-10-26 11:26:12,564 - author - INFO - 2021-10-26 11:26:12	send url https://ks4.xiaoduoai.com/api/admin/config2/add_shop_transfer/v2
+
+2021-10-26 11:26:12,581 - author - INFO - 2021-10-26 11:26:12	send data {'shop_id': '5ec76879edbe97000f8d850c', 'question_ids': '504820385'}
+
+2021-10-26 11:26:12,845 - author - INFO - 2021-10-26 11:26:12	get response {'message': '成功', 'code': 0}
+
+2021-10-26 11:26:51,273 - author - ERROR - 2021-10-26 11:26:51	('list index out of range',)
+
+2021-10-26 11:26:52,244 - author - INFO - 2021-10-26 11:26:52	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+
+2021-10-26 11:26:52,265 - author - INFO - 2021-10-26 11:26:52	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+
+2021-10-26 11:26:52,488 - author - INFO - 2021-10-26 11:26:52	get response {'code': 0, 'message': ''}
+
+2021-10-26 11:26:52,507 - author - INFO - 2021-10-26 11:26:52	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+
+2021-10-26 11:26:52,522 - author - INFO - 2021-10-26 11:26:52	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+
+2021-10-26 11:26:53,033 - author - INFO - 2021-10-26 11:26:53	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-26 11:26:53,050 - author - INFO - 2021-10-26 11:26:53	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+
+2021-10-26 11:26:53,071 - author - INFO - 2021-10-26 11:26:53	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+
+2021-10-26 11:26:53,087 - author - INFO - 2021-10-26 11:26:53	send data:{'category_id': 13117}
+
+2021-10-26 11:26:53,289 - author - INFO - 2021-10-26 11:26:53	get response1<Response [200]>
+
+2021-10-26 11:26:53,309 - author - INFO - 2021-10-26 11:26:53	get response2{'message': '成功', 'code': 0}
+
+2021-10-26 11:26:53,333 - author - INFO - 2021-10-26 11:26:53	send url https://ks4.xiaoduoai.com/api/admin/config2/add_shop_transfer/v2
+
+2021-10-26 11:26:53,350 - author - INFO - 2021-10-26 11:26:53	send data {'shop_id': '5ec76879edbe97000f8d850c', 'question_ids': '504820385'}
+
+2021-10-26 11:26:53,602 - author - INFO - 2021-10-26 11:26:53	get response {'message': '成功', 'code': 0}
+

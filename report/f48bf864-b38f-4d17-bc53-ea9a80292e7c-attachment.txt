@@ -1,0 +1,4 @@
+INFO     author:load_log.py:35 2021-10-26 11:26:12	send url:https://ks4.xiaoduoai.com/api/admin/guide/shop_setup
+INFO     author:load_log.py:35 2021-10-26 11:26:12	send data:{'category_id': 13117}
+INFO     author:load_log.py:35 2021-10-26 11:26:12	get response1<Response [200]>
+INFO     author:load_log.py:35 2021-10-26 11:26:12	get response2{'message': '成功', 'code': 0}

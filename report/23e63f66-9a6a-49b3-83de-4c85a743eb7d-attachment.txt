@@ -1,0 +1,3 @@
+INFO     author:load_log.py:35 2021-10-26 11:26:53	send url https://ks4.xiaoduoai.com/api/admin/config2/add_shop_transfer/v2
+INFO     author:load_log.py:35 2021-10-26 11:26:53	send data {'shop_id': '5ec76879edbe97000f8d850c', 'question_ids': '504820385'}
+INFO     author:load_log.py:35 2021-10-26 11:26:53	get response {'message': '成功', 'code': 0}

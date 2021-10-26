@@ -35,12 +35,12 @@ class TestClass(tranfer_common):
         self.tranfer.set_shop_setup(category_id=13117)
 
 
-    @allure.title('设置回复前缀')
-    @pytest.mark.critical
-    @allure.severity('critical')
-    def test_004(self):
-        s = "~~1~~"
-        self.omea(settingsa=s)
+    # @allure.title('设置回复前缀')
+    # @pytest.mark.critical
+    # @allure.severity('critical')
+    # def test_004(self):
+    #     s = "~~1~~"
+    #     self.omea(settingsa=s)
 
     @allure.title('添加转接问题')
     @pytest.mark.critical

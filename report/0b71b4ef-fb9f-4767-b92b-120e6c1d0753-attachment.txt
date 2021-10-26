@@ -1,0 +1,3 @@
+INFO     author:load_log.py:35 2021-10-26 11:26:11	send url https://ks4.xiaoduoai.com/api/admin/xdservice/edit_my
+INFO     author:load_log.py:35 2021-10-26 11:26:11	send data {'settings_msg_before_transfer': 'aasssssssssss'}
+INFO     author:load_log.py:35 2021-10-26 11:26:11	get response {'code': 0, 'message': ''}

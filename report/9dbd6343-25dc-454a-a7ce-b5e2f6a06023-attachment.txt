@@ -1,0 +1,4 @@
+INFO     author:load_log.py:35 2021-10-26 11:26:52	send url https://ks4.xiaoduoai.com/api/condition_reply_admin/shop/search/global/cond_answer
+INFO     author:load_log.py:35 2021-10-26 11:26:52	send data {'global_search_related': {'main_type': 'question', 'question_type': 'question_b', 'keyword': '你好'}}
+INFO     author:load_log.py:35 2021-10-26 11:26:53	get response {'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
+INFO     author:load_log.py:35 2021-10-26 11:26:53	{'code': 0, 'data': {'question_with_conds': [], 'hist_answer_total': 0, 'question_total': 19}}
