@@ -37,6 +37,8 @@ if __name__ == "__main__":
         log.error(e.args)
         work_path = None
 
+    print(work_path)
+
     run = TbpRunner()
     run.run(path=work_path)
 
